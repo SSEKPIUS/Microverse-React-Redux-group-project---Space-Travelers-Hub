@@ -27,8 +27,8 @@ nav {
   display: flex;
   flex-direction: row;
   width: 100%;
-  gap: 3em;
-  align-items: center;
+  gap: 1em;
+  align-items: center; 
 }
 
 .nav-bar {
@@ -39,6 +39,7 @@ nav {
   align-items: center;
   grid-gap: 40px;
   gap: 40px;
+ 
 }
 
 .nav-brand {
@@ -46,7 +47,7 @@ nav {
   font-size: 1.775rem;
   font-weight: 700;
   color: #222425;
-  padding-top: 10px;
+  padding-top: 10px; 
 }
 
 .nav-links {
@@ -62,8 +63,8 @@ nav {
 .nav-link {
   opacity: 0.5;
   font-family: "Montserrat", sans-serif;
-  font-size: 0.813rem;
-  color: #0602f3;
+  font-size: 1.09rem;
+  color: #33a39e;
   letter-spacing: 1.9px;
   font-weight: normal;
   text-transform: capitalize;
