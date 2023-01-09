@@ -1,36 +1,14 @@
-# Microverse-WebPack-Template
-React, virtual DOM, how React uses the virtual DOM. Git/GitHub flow, webpack, linters, and workflows.
+# Space Travelers' Hub
+In this task, we will be working with the real live data from the SpaceX API. our task is to build a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.
 
 <a name="readme-top"> </a>
-
-<!--
-HOW TO USE:
-This is an example of how you may give instructions on setting up your project locally.
-
-Modify this file to match your project and remove sections that don't apply.
-
-REQUIRED SECTIONS:
-- Table of Contents
-- About the Project
-  - Built With
-  - Live Demo
-- Getting Started
-- Authors
-- Future Features
-- Contributing
-- Show your support
-- Acknowledgements
-- License
-
-After you're finished please remove all the comments and instructions!
--->
 
 <div align="center">
 
   <img src="logo.png" alt="logo" width="140"  height="auto"/>
   <br/>
 
-  <h3><b>Microverse README Template</b></h3>
+  <h3><b>README</b></h3>
 
 </div>
 
@@ -60,21 +38,17 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 [Space Travelers' Hub] <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
+> Description.
 
-**[your_project__name]** is a...
+**[Space Travelers' Hub]** In this task, we will be working with the real live data from the SpaceX API. our task is to build a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> LAMP Stack (Linux, Apache, MySQL, PHP)
-
-> MEAN Stack (MongoDB, Express.js, Angular.js, Node.js)
-
-> MERN Stack (MongoDB, Express.js, React.js, Node.js)
+>  React.js, Node.js
 
 <details>
   <summary>Client</summary>
@@ -83,29 +57,14 @@ After you're finished please remove all the comments and instructions!
   </ul>
 </details>
 
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
-  </ul>
-</details>
-
-<details>
-<summary>Database</summary>
-  <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
-  </ul>
-</details>
-
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
-
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+> Description
+- **[Rockets /Dragons]**
+- **[Missions]**
+- **[My Profile]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -115,7 +74,7 @@ After you're finished please remove all the comments and instructions!
 
 > Add a link to your deployed project.
 
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+- [Live Demo Link](https://#)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -185,17 +144,21 @@ Example:
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
+> collaborators of this project.
 
 👤 **Author 1**
 
 1. Ssekweyama Pius
 
 - GitHub: [@githubhandle](https://github.com/SSEKPIUS)
-- Twitter: [@twitterhandle](https://twitter.com/SSEK_PIUS)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/pius-ssekweyama-23665794)
 
-👤 **Author 2*
+2. Gulalai Ahmadi
+
+- GitHub: [@githubhandle](https://github.com/AhmadiGu)
+
+3. Christian Kiyong
+
+- GitHub: [@githubhandle](https://github.com/krisbobo)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -204,11 +167,11 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
+> features you will add to the project.
 
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- [ ] **[Enhance the My Profile section]**
+- [ ] **[Enhance the My Profile section by adding the "Cancel reservation" and "Leave Mission"]**
+- [ ] **[Enhance the My Profile section by adding the "Read more"]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
