@@ -31,12 +31,16 @@ const Navbar = () => {
   };
   return (
     <nav>
-      <span className="icon-button">
-        <img src={logo} alt="logo" style={{ width: '3.5em', height: '3.5em' }} />
-      </span>
-      <span className="nav-brand">
-        Space Travelers&apos; Hub
-      </span>
+      <div className="logo">
+        {' '}
+        <span className="icon-button">
+          <img src={logo} alt="logo" style={{ width: '3.5em', height: '3.5em' }} />
+        </span>
+        <span className="nav-brand">
+          Space Travelers&apos; Hub
+        </span>
+      </div>
+
       <ul className="nav-links">
         {links.map((link, index) => (
           <li key={link.id}>

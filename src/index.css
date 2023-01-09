@@ -14,7 +14,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  padding: 4%;
+  padding: 0% 2%;
   background-color: #fff;
 }
 
@@ -28,7 +28,7 @@ nav {
   flex-direction: row;
   width: 100%;
   gap: 1em;
-  align-items: center; 
+  align-items: center;
 }
 
 .nav-bar {
@@ -39,7 +39,11 @@ nav {
   align-items: center;
   grid-gap: 40px;
   gap: 40px;
- 
+}
+
+.logo {
+  display: flex;
+  justify-items: center;
 }
 
 .nav-brand {
@@ -47,7 +51,7 @@ nav {
   font-size: 1.775rem;
   font-weight: 700;
   color: #222425;
-  padding-top: 10px; 
+  padding: 10px 0 0 10px;
 }
 
 .nav-links {
@@ -64,8 +68,8 @@ nav {
   opacity: 0.5;
   font-family: "Montserrat", sans-serif;
   font-size: 1.09rem;
-  color: #33a39e;
-  letter-spacing: 1.9px;
+  color:#0290ff;
+  letter-spacing: 1px;
   font-weight: normal;
   text-transform: capitalize;
   text-decoration: none;
@@ -82,5 +86,15 @@ nav {
 }
 
 .container {
-  padding: 4%;
+  padding: 1.5%;
+}
+
+@media (max-width: 850px) {
+  .nav-links {
+    display: none;
+  }
+
+  .logo {
+    margin-left: 25%;
+  }
 }
