@@ -2,8 +2,8 @@
   display: flex;
   justify-items: center;
   gap: 10px;
-  margin-bottom: 20px;
   height: auto;
+  padding: 2% 3%;
 }
 
 .image {
@@ -46,7 +46,6 @@
 
   .image {
     width: 40%;
-    height: 55vh;
   }
 
   .content {
