@@ -19,40 +19,40 @@ function App() {
         </>
       </div>
       <div className="container">
-        <div>
-          <Routes>
-            <Route
-              exact
-              path="/"
-              element={<Navigate to="/rockets" replace />}
-            />
-            <Route
-              path="/rockets"
-              element={<Rockets />}
-              exact
-            />
-            <Route
-              path="/missions"
-              element={<Missions />}
-              exact
-            />
-            <Route
-              path="/dragons"
-              element={<Dragons />}
-              exact
-            />
-            <Route
-              path="/profile"
-              element={<Profile />}
-              exact
-            />
-            <Route
-              path="*"
-              element={<Error />}
-            />
-          </Routes>
-        </div>
+
+        <Routes>
+          <Route
+            exact
+            path="/"
+            element={<Navigate to="/rockets" replace />}
+          />
+          <Route
+            path="/rockets"
+            element={<Rockets />}
+            exact
+          />
+          <Route
+            path="/missions"
+            element={<Missions />}
+            exact
+          />
+          <Route
+            path="/dragons"
+            element={<Dragons />}
+            exact
+          />
+          <Route
+            path="/profile"
+            element={<Profile />}
+            exact
+          />
+          <Route
+            path="*"
+            element={<Error />}
+          />
+        </Routes>
       </div>
+
     </BrowserRouter>
   );
 }
