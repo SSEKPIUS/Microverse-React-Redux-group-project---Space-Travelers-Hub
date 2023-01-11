@@ -2,6 +2,7 @@ import { createAsyncThunk } from '@reduxjs/toolkit';
 import getData from './services';
 
 const GET_ROCKETS = 'Rockets/Rockets/GET_ROCKETS';
+const BOOK_ROCKETS = 'Rockets/Rockets/BOOK_ROCKETS';
 
 const initialState = {
   rockets: [],
@@ -10,8 +11,17 @@ const initialState = {
 const rocketReducer = (state = initialState, action) => {
   switch (action.type) {
     case `${GET_ROCKETS}/fulfilled`:
+      // {console.log('book',action.payload)}
       return {
         ...state,
+        rockets: action.payload,
+      };
+
+    case `${BOOK_ROCKETS}/fulfilled`:
+
+      return {
+        ...state,
+
         rockets: action.payload,
       };
 
@@ -29,6 +39,17 @@ export const getRockets = createAsyncThunk(GET_ROCKETS, async () => {
   });
 
   return rockets;
+});
+
+export const bookRockets = createAsyncThunk(BOOK_ROCKETS, async (id) => {
+  const data = await getData();
+  const newState = data.map((rocket) => {
+    if (rocket.id !== id) {
+      return rocket;
+    }
+    return { ...rocket, reserved: true };
+  });
+  return newState;
 });
 
 export default rocketReducer;
