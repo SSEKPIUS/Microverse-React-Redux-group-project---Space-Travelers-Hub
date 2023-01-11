@@ -35,6 +35,19 @@
   margin-top: 0.9rem;
 }
 
+.cancel {
+  background: white;
+  border-radius: 5px;
+  color: #007bff;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  outline: none;
+  font-size: 1.15rem;
+  margin-top: 0.9rem;
+  margin-left: 0.5rem;
+  box-shadow: 2px 2px 5px  #007bff;
+}
+
 .content {
   width: 70%;
 }
