@@ -47,7 +47,8 @@ tbody tr:nth-child(odd) {
   padding: 0.3em;
 }
 
-.membership button, .membershipExit button {
+.membership button,
+.membershipExit button {
   cursor: pointer;
   font-size: 1em;
   border: 1px solid rgb(45, 51, 56);
