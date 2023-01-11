@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import style from './Rockets.module.css';
-import { getRockets } from '../redux/rockets/rockets';
+import { getRockets, bookRockets } from '../redux/rockets/rockets';
 
 const Rockets = () => {
   const { rockets } = useSelector((state) => state.rockets);
@@ -24,7 +24,7 @@ const Rockets = () => {
             </h3>
 
             <p className={style.rocketDec}>{racket.description}</p>
-            <button type="button" className={style.reserve}>Reserve rocket</button>
+            <button type="button" className={style.reserve} onClick={() => dispatch(bookRockets(racket.id))}>Reserve rocket</button>
           </div>
         </div>
       </div>
@@ -32,5 +32,5 @@ const Rockets = () => {
 
   );
 };
-
+// dispatch(bookRockets(racket.id))
 export default Rockets;
