@@ -23,9 +23,17 @@ const Rockets = () => {
               {racket.rocket_name }
             </h3>
 
-            <p className={style.rocketDec}>{racket.description}</p>
-            <button type="button" className={style.reserve} onClick={() => dispatch(bookRockets(racket.id))}>Reserve racket</button>
-            <button type="button" className={style.cancel} onClick={() => dispatch(cancelRockets(racket.id))}>Cancel Reservation</button>
+            <p className={style.rocketDec}>
+              {racket.reserved && (
+                <span className={style.badges}> Reserved</span>
+              )}
+              {racket.description}
+            </p>
+            {racket.reserved ? (
+              <button type="button" className={style.cancel} onClick={() => dispatch(cancelRockets(racket.id))}>Cancel Reservation</button>
+            ) : (
+              <button type="button" className={style.reserve} onClick={() => dispatch(bookRockets(racket.id))}>Reserve racket</button>
+            )}
           </div>
         </div>
       </div>
