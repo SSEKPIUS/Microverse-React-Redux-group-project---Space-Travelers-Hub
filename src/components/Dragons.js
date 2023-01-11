@@ -18,11 +18,9 @@ const Dragons = () => {
             <img src={dragon.flickr_images[0]} alt="dragon" />
           </div>
           <div className={style.content}>
-            {' '}
             <h3 className={style.rocketName}>
-              {dragon.rocket_name }
+              {dragon.name }
             </h3>
-
             <p className={style.rocketDec}>{dragon.description}</p>
             <button type="button" className={style.reserve}>Reserve Dragon</button>
           </div>
