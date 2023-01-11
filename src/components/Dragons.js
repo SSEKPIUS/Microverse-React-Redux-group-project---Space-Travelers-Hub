@@ -1,44 +1,29 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import style from './Rockets.module.css';
-import racket1 from '../rockets/dragon.jpeg';
+import { getDragons } from '../redux/dragons/dragons';
 
 const Dragons = () => {
-  const rockets = [
-    {
-      id: 1,
-      rocket_name: 'Dragon 1',
-      description: 'American private space transportation company SpaceX has developed and produced several spacecraft named Dragon. The first family member, now referred to as Dragon 1, flew 23 cargo missions to the ISS between 2010 and 2020 before being retired. With this first version not designed for carrying astronauts, it was funded by NASA with $396 million awarded through the Commercial Orbital Transportation Services (COTS) program,[1] with SpaceX being announced as a winner of the first round of funding on August 18, 2006.',
-      flickr_images: '  ',
-    },
-    {
-      id: 2,
-      rocket_name: 'Dragon 1',
-      description: 'American private space transportation company SpaceX has developed and produced several spacecraft named Dragon. The first family member, now referred to as Dragon 1, flew 23 cargo missions to the ISS between 2010 and 2020 before being retired. With this first version not designed for carrying astronauts, it was funded by NASA with $396 million awarded through the Commercial Orbital Transportation Services (COTS) program,[1] with SpaceX being announced as a winner of the first round of funding on August 18, 2006.',
-      flickr_images: '  ',
-    },
-    {
-      id: 3,
-      rocket_name: 'Dragon 1',
-      description: 'American private space transportation company SpaceX has developed and produced several spacecraft named Dragon. The first family member, now referred to as Dragon 1, flew 23 cargo missions to the ISS between 2010 and 2020 before being retired. With this first version not designed for carrying astronauts, it was funded by NASA with $396 million awarded through the Commercial Orbital Transportation Services (COTS) program,[1] with SpaceX being announced as a winner of the first round of funding on August 18, 2006.',
-      flickr_images: '  ',
-    },
-
-  ];
+  const { dragons } = useSelector((state) => state.dragons);
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(getDragons());
+  }, [dispatch]);
 
   return (
-    rockets.map((racket) => (
-      <div key={racket.id}>
+    dragons.map((dragon) => (
+      <div key={dragon.id}>
         <div className={style.rocketContainer}>
           <div className={style.image}>
-            {racket.flickr_images}
-            <img src={racket1} alt="racket" />
+            <img src={dragon.flickr_images[0]} alt="dragon" />
           </div>
           <div className={style.content}>
             {' '}
             <h3 className={style.rocketName}>
-              {racket.rocket_name }
+              {dragon.rocket_name }
             </h3>
-            <p className={style.rocketDec}>{racket.description}</p>
+
+            <p className={style.rocketDec}>{dragon.description}</p>
             <button type="button" className={style.reserve}>Reserve Dragon</button>
           </div>
         </div>
