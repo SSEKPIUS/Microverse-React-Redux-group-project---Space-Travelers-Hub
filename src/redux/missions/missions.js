@@ -2,6 +2,7 @@ import { createAsyncThunk } from '@reduxjs/toolkit';
 import fetchMissions from './fetch';
 
 const GET_MISSIONS = 'Missions/Missions/GET_MISSIONS';
+const JOIN_MISSIONS = 'Missions/Missions/JOIN_MISSIONS';
 
 const initialState = {
   missions: [],
@@ -29,6 +30,17 @@ export const getMissions = createAsyncThunk(GET_MISSIONS, async () => {
   });
 
   return missions;
+});
+
+export const joinMissions = createAsyncThunk(JOIN_MISSIONS, async (id) => {
+  const data = await fetchMissions();
+  const newState = data.map((mission) => {
+    if (mission.id !== id) {
+      return mission;
+    }
+    return { ...mission, reserved: true };
+  });
+  return newState;
 });
 
 export default missionReducer;
