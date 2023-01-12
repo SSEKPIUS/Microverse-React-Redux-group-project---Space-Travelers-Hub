@@ -20,12 +20,22 @@ const rocketReducer = (state = initialState, action) => {
     case `${BOOK_ROCKETS}/fulfilled`:
       return {
         ...state,
-        rockets: action.payload,
+        rockets: state.rockets.map((rocket) => {
+          if (rocket.id !== action.payload) {
+            return rocket;
+          }
+          return { ...rocket, reserved: true };
+        }),
       };
     case `${CANCEL_BOOK_ROCKETS}/fulfilled`:
       return {
         ...state,
-        rockets: action.payload,
+        rockets: state.rockets.map((rocket) => {
+          if (rocket.id !== action.payload) {
+            return rocket;
+          }
+          return { ...rocket, reserved: false };
+        }),
       };
 
     default:
@@ -44,28 +54,8 @@ export const getRockets = createAsyncThunk(GET_ROCKETS, async () => {
   return rockets;
 });
 
-export const bookRockets = createAsyncThunk(BOOK_ROCKETS, async (id) => {
-  const data = await getData();
-  const newState = data.map((rocket) => {
-    if (rocket.id !== id) {
-      return rocket;
-    }
-    return { ...rocket, reserved: true };
-  });
+export const bookRockets = createAsyncThunk(BOOK_ROCKETS, async (id) => id);
 
-  return newState;
-});
-
-export const cancelRockets = createAsyncThunk(CANCEL_BOOK_ROCKETS, async (id) => {
-  const data = await getData();
-  const newState = data.map((rocket) => {
-    if (rocket.id !== id) {
-      return rocket;
-    }
-    return { ...rocket, reserved: false };
-  });
-
-  return newState;
-});
+export const cancelRockets = createAsyncThunk(CANCEL_BOOK_ROCKETS, async (id) => id);
 
 export default rocketReducer;
