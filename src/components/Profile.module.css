@@ -1,31 +1,31 @@
 .container {
-    display: flex;
-    flex-direction: row;
-    gap: 2em;
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
 }
 
 .container > div {
-    flex-basis: 33%;
+  flex-basis: 33%;
 }
 
 .container > div h2 {
-   text-transform: capitalize;
-   font-weight: 900;
-   padding: 1em 0 0.5em 0;
+  text-transform: capitalize;
+  font-weight: 900;
+  padding: 1em 0 0.5em 0;
 }
 
 .container > div ul {
-   width: 100%;
-   border: rgba(128, 128, 128, 0.473) 1px solid;
-   border-radius: 5px;
-   list-style: none;
+  width: 100%;
+  border: rgba(128, 128, 128, 0.473) 1px solid;
+  border-radius: 5px;
+  list-style: none;
 }
 
 .container > div ul li {
-    width: auto;
-    padding: 1em 0 1em 12.38px;
+  width: auto;
+  padding: 1em 0 1em 12.38px;
 }
 
 .container > div > ul > :not(li:first-child) {
-   border-top: rgba(128, 128, 128, 0.473) 1px solid;
+  border-top: rgba(128, 128, 128, 0.473) 1px solid;
 }
