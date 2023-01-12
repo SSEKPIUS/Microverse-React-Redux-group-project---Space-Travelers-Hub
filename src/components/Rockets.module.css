@@ -48,6 +48,18 @@
   box-shadow: 2px 2px 5px  #007bff;
 }
 
+.badges {
+  background: #09c59c;
+  display: inline-block;
+  border-radius: 45px;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  font-size: 0.899rem;
+  margin: 0.4rem 0.4rem 0.4rem 1.1rem;
+}
+
 .content {
   width: 70%;
 }

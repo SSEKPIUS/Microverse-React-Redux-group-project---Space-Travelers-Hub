@@ -56,7 +56,7 @@ export const bookRockets = createAsyncThunk(BOOK_ROCKETS, async (id) => {
   return newState;
 });
 
-export const cancleRockets = createAsyncThunk(CANCEL_BOOK_ROCKETS, async (id) => {
+export const cancelRockets = createAsyncThunk(CANCEL_BOOK_ROCKETS, async (id) => {
   const data = await getData();
   const newState = data.map((rocket) => {
     if (rocket.id !== id) {
