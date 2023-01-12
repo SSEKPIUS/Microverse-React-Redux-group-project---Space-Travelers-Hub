@@ -6,7 +6,7 @@ import TableHead from '@material-ui/core/TableHead';
 import TableBody from '@material-ui/core/TableBody';
 import TableRow from '@material-ui/core/TableRow';
 import TableCell from '@material-ui/core/TableCell';
-import { getMissions } from '../redux/missions/missions';
+import { getMissions, joinMissions } from '../redux/missions/missions';
 import style from './Missions.module.css';
 
 const Missions = () => {
@@ -33,7 +33,7 @@ const Missions = () => {
               <TableCell className={style.missionName}>{mission.mission_name}</TableCell>
               <TableCell className={style.descriptionText}>{mission.description}</TableCell>
               <TableCell className={style.missionStatus}><button disabled type="button" className="statusBtn">NOT A MEMBER</button></TableCell>
-              <TableCell className={style.membership}><button type="button" className="membershipBtn">Join Mission</button></TableCell>
+              <TableCell className={style.membership}><button type="button" className="membershipBtn" onClick={() => dispatch(joinMissions(mission.id))}>Join Mission</button></TableCell>
             </TableRow>
           ))}
         </TableBody>
