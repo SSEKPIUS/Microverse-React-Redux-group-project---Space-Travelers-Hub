@@ -32,7 +32,7 @@ const Rockets = () => {
             {racket.reserved ? (
               <button type="button" className={style.cancel} onClick={() => dispatch(cancelRockets(racket.id))}>Cancel Reservation</button>
             ) : (
-              <button type="button" className={style.reserve} onClick={() => dispatch(bookRockets(racket.id))}>Reserve racket</button>
+              <button type="button" className={style.reserve} onClick={() => dispatch(bookRockets(racket.id))}>Reserve Rocket</button>
             )}
           </div>
         </div>

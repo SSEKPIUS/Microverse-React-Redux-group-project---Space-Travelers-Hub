@@ -16,26 +16,26 @@ const dragonReducer = (state = initialState, action) => {
         ...state,
         dragons: action.payload,
       };
-      case `${BOOK_DRAGONS}/fulfilled`:
-        return {
-          ...state,
-          dragons: state.dragons.map((dragon) => {
-            if (dragon.id !== action.payload) {
-              return dragon;
-            }
-            return {...dragon, reserved: true };
-          }),
-        };
-      case `${CANCEL_BOOKED_DRAGONS}/fulfilled`:
-        return {
-          ...state,
-          dragons: state.dragons.map((dragon) => {
-            if (dragon.id !== action.payload) {
-              return dragon;
-            }
-            return { ...dragon, reserved: false };
-          }),
-        }
+    case `${BOOK_DRAGONS}/fulfilled`:
+      return {
+        ...state,
+        dragons: state.dragons.map((dragon) => {
+          if (dragon.id !== action.payload) {
+            return dragon;
+          }
+          return { ...dragon, reserved: true };
+        }),
+      };
+    case `${CANCEL_BOOKED_DRAGONS}/fulfilled`:
+      return {
+        ...state,
+        dragons: state.dragons.map((dragon) => {
+          if (dragon.id !== action.payload) {
+            return dragon;
+          }
+          return { ...dragon, reserved: false };
+        }),
+      };
 
     default:
       return state;

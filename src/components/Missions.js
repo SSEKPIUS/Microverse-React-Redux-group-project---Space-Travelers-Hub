@@ -16,6 +16,14 @@ const Missions = () => {
     dispatch(getMissions());
   }, [dispatch]);
 
+  const handleJoin = (missionId) => {
+    dispatch(joinMissions(missionId));
+  };
+
+  const handleExit = (missionId) => {
+    dispatch(exitMissions(missionId));
+  };
+
   return (
     <TableContainer>
       <Table className={style.missionTable}>
@@ -29,12 +37,21 @@ const Missions = () => {
         </TableHead>
         <TableBody>
           {missions.map((mission) => (
-            <TableRow key={mission.id}>
+            <TableRow key={mission.mission_id}>
               <TableCell className={style.missionName}>{mission.mission_name}</TableCell>
               <TableCell className={style.descriptionText}>{mission.description}</TableCell>
-              <TableCell className={style.missionStatus}><button disabled type="button" className="statusBtn">NOT A MEMBER</button></TableCell>
-              <TableCell className={style.membership}><button type="button" className="membershipBtn" onClick={() => dispatch(joinMissions(mission.id))}>Join Mission</button></TableCell>
-              <TableCell className={style.membershipExit}><button type="button" className="membershipBtnExit" onClick={() => dispatch(exitMissions(mission.id))}>Leave Mission</button></TableCell>
+              <TableCell className={style.missionStatus}>
+                {
+                mission.reserved ? (<button disabled type="button" className={style.statusBtnActive}>ACTIVE MEMBER</button>)
+                  : (<button disabled type="button" className={style.statusBtn}>NOT A MEMBER</button>)
+                }
+              </TableCell>
+              <TableCell className={style.membership}>
+                {
+                mission.reserved ? (<button type="button" className={style.membershipBtnExit} onClick={() => handleExit(mission.mission_id)}>Leave Mission</button>)
+                  : (<button type="button" className={style.membershipBtn} onClick={() => handleJoin(mission.mission_id)}>Join Mission</button>)
+                }
+              </TableCell>
             </TableRow>
           ))}
         </TableBody>
