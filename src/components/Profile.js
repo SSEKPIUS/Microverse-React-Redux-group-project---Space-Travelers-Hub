@@ -1,31 +1,22 @@
 import React from 'react';
+import Dragon from './DragonsProfile';
 import style from './Profile.module.css';
+import Rocket from './RacketProfile';
+import Mission from './MissionProfile';
 
 const Profile = () => (
   <div className={style.container}>
     <div>
       <h2>my missions</h2>
-      <ul>
-        <li><span>Telstar</span></li>
-        <li><span>SES</span></li>
-        <li><span>AsiaSat</span></li>
-        <li><span>ABS</span></li>
-      </ul>
+      <Mission />
     </div>
     <div>
       <h2>my rockets</h2>
-      <ul>
-        <li><span>Falcon 9</span></li>
-        <li><span>Falcon Heavy</span></li>
-        <li><span>Starship</span></li>
-      </ul>
+      <Rocket />
     </div>
     <div>
       <h2>my dragons</h2>
-      <ul>
-        <li><span>Dragon 1</span></li>
-        <li><span>Dragon 2</span></li>
-      </ul>
+      <Dragon />
     </div>
   </div>
 );
