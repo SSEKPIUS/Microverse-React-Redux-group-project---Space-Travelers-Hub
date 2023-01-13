@@ -35,7 +35,8 @@ tbody tr:nth-child(odd) {
   border: 1px solid var(--secondary);
 }
 
-.missionStatus button {
+.statusBtnActive,
+.statusBtn {
   font-size: 0.7em;
   border: none;
   background-color: rgb(97, 106, 113);
@@ -47,8 +48,13 @@ tbody tr:nth-child(odd) {
   padding: 0.3em;
 }
 
-.membership button,
-.membershipExit button {
+.statusBtnActive {
+  color: rgb(254, 254, 254);
+  background-color: rgb(37, 162, 183);
+}
+
+.membershipBtn,
+.membershipBtnExit {
   cursor: pointer;
   font-size: 1em;
   border: 1px solid rgb(45, 51, 56);
@@ -61,7 +67,7 @@ tbody tr:nth-child(odd) {
   padding: 0.6em;
 }
 
-.membershipExit button {
+.membershipBtnExit {
   border: 1px solid rgb(225, 52, 67);
   background-color: rgb(254, 254, 254);
   color: rgb(225, 52, 67);

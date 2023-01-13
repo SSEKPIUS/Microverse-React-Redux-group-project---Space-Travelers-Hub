@@ -16,6 +16,26 @@ const missionReducer = (state = initialState, action) => {
         ...state,
         missions: action.payload,
       };
+    case `${JOIN_MISSIONS}/fulfilled`:
+      return {
+        ...state,
+        missions: state.missions.map((mission) => {
+          if (mission.mission_id !== action.payload) {
+            return mission;
+          }
+          return { ...mission, reserved: true };
+        }),
+      };
+    case `${EXIT_MISSIONS}/fulfilled`:
+      return {
+        ...state,
+        missions: state.missions.map((mission) => {
+          if (mission.mission_id !== action.payload) {
+            return mission;
+          }
+          return { ...mission, reserved: false };
+        }),
+      };
 
     default:
       return state;
@@ -33,26 +53,7 @@ export const getMissions = createAsyncThunk(GET_MISSIONS, async () => {
   return missions;
 });
 
-export const joinMissions = createAsyncThunk(JOIN_MISSIONS, async (id) => {
-  const data = await fetchMissions();
-  const newState = data.map((mission) => {
-    if (mission.id !== id) {
-      return mission;
-    }
-    return { ...mission, reserved: true };
-  });
-  return newState;
-});
-
-export const exitMissions = createAsyncThunk(EXIT_MISSIONS, async (id) => {
-  const data = await fetchMissions();
-  const newState = data.map((mission) => {
-    if (mission.id !== id) {
-      return mission;
-    }
-    return { ...mission, reserved: false };
-  });
-  return newState;
-});
+export const joinMissions = createAsyncThunk(JOIN_MISSIONS, async (id) => id);
+export const exitMissions = createAsyncThunk(EXIT_MISSIONS, async (id) => id);
 
 export default missionReducer;

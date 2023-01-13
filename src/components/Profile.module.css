@@ -17,7 +17,7 @@
 .container > div ul {
   width: 100%;
   border: rgba(128, 128, 128, 0.473) 1px solid;
-  box-shadow: 2px 2px 5px #007bff, -2px -2px 5px #007bff;
+  box-shadow: 2px 2px 5px #09c59c, -2px -2px 5px #007bff;
   border-radius: 5px;
   list-style: none;
   text-align: center;

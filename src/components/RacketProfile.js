@@ -10,20 +10,17 @@ const Rocket = () => {
   return (
     <ul>
       { raserved.length === 0
-        ? (<span> No Reserved Racket!!!</span>)
-        : (<span>Reserved Rackets!!!</span>)}
-      {
-        raserved.map((racket) => (
-          <li key={racket.id}>
-            <span>
-              {' '}
-              {racket.name}
-            </span>
-          </li>
-        ))
-    }
+        ? (<span> No Reserved Rocket!</span>)
+        : (
+          raserved.map((racket) => (
+            <li key={racket.id}>
+              <span>
+                {racket.name}
+              </span>
+            </li>
+          ))
+        )}
     </ul>
-
   );
 };
 
