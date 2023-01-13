@@ -17,15 +17,29 @@
 .container > div ul {
   width: 100%;
   border: rgba(128, 128, 128, 0.473) 1px solid;
+  box-shadow: 2px 2px 5px #007bff, -2px -2px 5px #007bff;
   border-radius: 5px;
   list-style: none;
+  text-align: center;
 }
 
 .container > div ul li {
   width: auto;
-  padding: 1em 0 1em 12.38px;
-}
-
-.container > div > ul > :not(li:first-child) {
+  padding: 1em 0 1em 12.38px; 
   border-top: rgba(128, 128, 128, 0.473) 1px solid;
+}  
+
+.container > div ul li span {
+  width: auto;
+  padding: 1em 0 1em 12.38px;  
+  color: #2f2f31;
+  font-size: 1.5rem;  
+}
+.container > div ul span {
+  width: auto;
+  padding: 1em 0 1em 12.38px; 
+  color: #f68d36;
+  font-size: 1.6rem;
+  font-style: italic;
+   
 }

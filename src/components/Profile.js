@@ -2,21 +2,21 @@ import React from 'react';
 import Dragon from './DragonsProfile';
 import style from './Profile.module.css';
 import Rocket from './RacketProfile';
-import Mission from './MissionProfile'
+import Mission from './MissionProfile';
 
 const Profile = () => (
   <div className={style.container}>
     <div>
       <h2>my missions</h2>
-      <Mission/>
+      <Mission />
     </div>
     <div>
       <h2>my rockets</h2>
-      <Rocket/>
+      <Rocket />
     </div>
     <div>
       <h2>my dragons</h2>
-      <Dragon/>
+      <Dragon />
     </div>
   </div>
 );

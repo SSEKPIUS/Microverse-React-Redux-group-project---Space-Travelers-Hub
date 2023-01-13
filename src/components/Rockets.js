@@ -20,7 +20,7 @@ const Rockets = () => {
           <div className={style.content}>
             {' '}
             <h3 className={style.rocketName}>
-              {racket.rocket_name }
+              {racket.name }
             </h3>
 
             <p className={style.rocketDec}>

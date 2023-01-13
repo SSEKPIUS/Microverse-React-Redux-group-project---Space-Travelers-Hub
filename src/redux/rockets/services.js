@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const url = 'https://api.spacexdata.com/v3/rockets';
+const url = 'https://api.spacexdata.com/v4/rockets';
 
 const getData = async () => {
   try {
