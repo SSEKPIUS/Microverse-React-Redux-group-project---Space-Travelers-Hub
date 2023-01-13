@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import style from './Rockets.module.css';
-import { getDragons } from '../redux/dragons/dragons';
+import { getDragons, cancelDragons, bookDragons} from '../redux/dragons/dragons';
 
 const Dragons = () => {
   const { dragons } = useSelector((state) => state.dragons);
@@ -21,8 +21,18 @@ const Dragons = () => {
             <h3 className={style.rocketName}>
               {dragon.name }
             </h3>
-            <p className={style.rocketDec}>{dragon.description}</p>
-            <button type="button" className={style.reserve}>Reserve Dragon</button>
+            <p className={style.rocketDec}> 
+              {dragon.reserved && (
+                <span className={style.badges}>Reserved</span>
+              )}
+              {dragon.description}
+            </p>
+            {dragon.reserved ? (
+              <button type="button" className={style.cancel} onClick={() => dispatch(cancelDragons(dragon.id))}>Cancel Reservation</button>
+            ) : (
+              <button type="button" className={style.reserve} onClick={() => dispatch(bookDragons(dragon.id))}>Reserve  Dragon</button>
+            )}
+             
           </div>
         </div>
       </div>
