@@ -7,7 +7,7 @@ const Rockets = () => {
   const { rockets } = useSelector((state) => state.rockets);
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(getRockets());
+    dispatch(getRockets(rockets));
   }, [dispatch]);
 
   return (
@@ -41,5 +41,5 @@ const Rockets = () => {
 
   );
 };
-// dispatch(bookRockets(racket.id))
+
 export default Rockets;

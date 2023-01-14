@@ -3,7 +3,9 @@ import { useSelector } from 'react-redux';
 
 const Rocket = () => {
   const { rockets } = useSelector((state) => state.rockets);
+
   const [raserved, setRaserved] = useState([]);
+
   useEffect(() => {
     setRaserved(() => rockets.filter((racket) => racket.reserved === true));
   }, [rockets]);

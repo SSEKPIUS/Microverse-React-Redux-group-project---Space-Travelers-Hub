@@ -42,8 +42,8 @@ const missionReducer = (state = initialState, action) => {
   }
 };
 
-export const getMissions = createAsyncThunk(GET_MISSIONS, async () => {
-  const data = await fetchMissions();
+export const getMissions = createAsyncThunk(GET_MISSIONS, async (missionsData) => {
+  const data = missionsData.length === 0 ? await fetchMissions() : missionsData;
   const missions = [];
 
   data.forEach((data) => {
