@@ -1,178 +1,70 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Test snapshot component of Navbar Renders correctly of nav bar 1`] = `
-Object {
-  "asFragment": [Function],
-  "baseElement": <body>
-    <div>
-      <nav>
-        <div
-          class="logo"
-        >
-           
-          <span
-            class="icon-button"
-          >
-            <img
-              alt="logo"
-              src="logo.png"
-              style="width: 3.5em; height: 3.5em;"
-            />
-          </span>
-          <span
-            class="nav-brand"
-          >
-            Space Travelers' Hub
-          </span>
-        </div>
-        <ul
-          class="nav-links"
-        >
-          <li>
-            <a
-              class="nav-link "
-              href="/rockets"
-            >
-              Rockets
-            </a>
-          </li>
-          <li>
-            <a
-              class="nav-link "
-              href="/dragons"
-            >
-              Dragons
-            </a>
-          </li>
-          <li>
-            <a
-              class="nav-link "
-              href="/missions"
-            >
-              Missions
-            </a>
-          </li>
-          <li>
-            <a
-              class="nav-link "
-              href="/profile"
-            >
-              My Profile
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </body>,
-  "container": <div>
-    <nav>
-      <div
-        class="logo"
+exports[`Test snapshot component of Navbar should render with given state from Redux store 1`] = `
+<nav>
+  <div
+    className="logo"
+  >
+     
+    <span
+      className="icon-button"
+    >
+      <img
+        alt="logo"
+        src="logo.png"
+        style={
+          Object {
+            "height": "3.5em",
+            "width": "3.5em",
+          }
+        }
+      />
+    </span>
+    <span
+      className="nav-brand"
+    >
+      Space Travelers' Hub
+    </span>
+  </div>
+  <ul
+    className="nav-links"
+  >
+    <li>
+      <a
+        className="nav-link "
+        href="/rockets"
+        onClick={[Function]}
       >
-         
-        <span
-          class="icon-button"
-        >
-          <img
-            alt="logo"
-            src="logo.png"
-            style="width: 3.5em; height: 3.5em;"
-          />
-        </span>
-        <span
-          class="nav-brand"
-        >
-          Space Travelers' Hub
-        </span>
-      </div>
-      <ul
-        class="nav-links"
+        Rockets
+      </a>
+    </li>
+    <li>
+      <a
+        className="nav-link "
+        href="/dragons"
+        onClick={[Function]}
       >
-        <li>
-          <a
-            class="nav-link "
-            href="/rockets"
-          >
-            Rockets
-          </a>
-        </li>
-        <li>
-          <a
-            class="nav-link "
-            href="/dragons"
-          >
-            Dragons
-          </a>
-        </li>
-        <li>
-          <a
-            class="nav-link "
-            href="/missions"
-          >
-            Missions
-          </a>
-        </li>
-        <li>
-          <a
-            class="nav-link "
-            href="/profile"
-          >
-            My Profile
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </div>,
-  "debug": [Function],
-  "findAllByAltText": [Function],
-  "findAllByDisplayValue": [Function],
-  "findAllByLabelText": [Function],
-  "findAllByPlaceholderText": [Function],
-  "findAllByRole": [Function],
-  "findAllByTestId": [Function],
-  "findAllByText": [Function],
-  "findAllByTitle": [Function],
-  "findByAltText": [Function],
-  "findByDisplayValue": [Function],
-  "findByLabelText": [Function],
-  "findByPlaceholderText": [Function],
-  "findByRole": [Function],
-  "findByTestId": [Function],
-  "findByText": [Function],
-  "findByTitle": [Function],
-  "getAllByAltText": [Function],
-  "getAllByDisplayValue": [Function],
-  "getAllByLabelText": [Function],
-  "getAllByPlaceholderText": [Function],
-  "getAllByRole": [Function],
-  "getAllByTestId": [Function],
-  "getAllByText": [Function],
-  "getAllByTitle": [Function],
-  "getByAltText": [Function],
-  "getByDisplayValue": [Function],
-  "getByLabelText": [Function],
-  "getByPlaceholderText": [Function],
-  "getByRole": [Function],
-  "getByTestId": [Function],
-  "getByText": [Function],
-  "getByTitle": [Function],
-  "queryAllByAltText": [Function],
-  "queryAllByDisplayValue": [Function],
-  "queryAllByLabelText": [Function],
-  "queryAllByPlaceholderText": [Function],
-  "queryAllByRole": [Function],
-  "queryAllByTestId": [Function],
-  "queryAllByText": [Function],
-  "queryAllByTitle": [Function],
-  "queryByAltText": [Function],
-  "queryByDisplayValue": [Function],
-  "queryByLabelText": [Function],
-  "queryByPlaceholderText": [Function],
-  "queryByRole": [Function],
-  "queryByTestId": [Function],
-  "queryByText": [Function],
-  "queryByTitle": [Function],
-  "rerender": [Function],
-  "unmount": [Function],
-}
+        Dragons
+      </a>
+    </li>
+    <li>
+      <a
+        className="nav-link "
+        href="/missions"
+        onClick={[Function]}
+      >
+        Missions
+      </a>
+    </li>
+    <li>
+      <a
+        className="nav-link "
+        href="/profile"
+        onClick={[Function]}
+      >
+        My Profile
+      </a>
+    </li>
+  </ul>
+</nav>
 `;
