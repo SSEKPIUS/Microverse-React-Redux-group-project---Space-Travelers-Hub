@@ -4,6 +4,7 @@ import logo from '../logo.png';
 
 const Navbar = () => {
   const location = useLocation();
+
   const links = [
     {
       id: 1,
@@ -26,9 +27,11 @@ const Navbar = () => {
       text: 'My Profile',
     },
   ];
+
   const updateLink = (index) => {
     links[index] = { ...links[index], active: true };
   };
+
   return (
     <nav>
       <div className="logo">
