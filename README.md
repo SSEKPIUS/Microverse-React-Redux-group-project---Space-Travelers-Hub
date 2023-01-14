@@ -1,54 +1,39 @@
-# Space Travelers' Hub
-In this task, we will be working with the real live data from the SpaceX API. our task is to build a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.
-
 <a name="readme-top"> </a>
-
-<div align="center">
-
-  <img src="logo.png" alt="logo" width="140"  height="auto"/>
-  <br/>
-
-  <h3><b>README</b></h3>
-
-</div>
 
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
 
-- [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
-- [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
-  - [Prerequisites](#prerequisites)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
-- [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
-- [🤝 Contributing](#contributing)
-- [⭐️ Show your support](#support)
-- [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ](#faq)
-- [📝 License](#license)
+- [📗 Table of Contents](#-table-of-contents)
+- [📖 \[Space Travelers' Hub\] ](#-space-travelers-hub-)
+  - [🛠 Built With ](#-built-with-)
+    - [Tech Stack ](#tech-stack-)
+    - [Key Features ](#key-features-)
+  - [🚀 Live Demo ](#-live-demo-)
+  - [💻 Getting Started ](#-getting-started-)
+    - [Setup](#setup)
+    - [Install](#install)
+    - [Usage](#usage)
+    - [Run tests](#run-tests)
+  - [👥 Authors ](#-authors-)
+  - [🔭 Future Features ](#-future-features-)
+  - [🤝 Contributing ](#-contributing-)
+  - [⭐️ Show your support ](#️-show-your-support-)
+  - [🙏 Acknowledgments ](#-acknowledgments-)
+  - [❓ FAQ ](#-faq-)
+  - [📝 License ](#-license-)
 
 <!-- PROJECT DESCRIPTION -->
 
 # 📖 [Space Travelers' Hub] <a name="about-project"></a>
 
-> Description.
-
-**[Space Travelers' Hub]** In this task, we will be working with the real live data from the SpaceX API. our task is to build a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.
+> In this task, we will be working with the real live data from the SpaceX API. our task is to build a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
->  React.js, Node.js
+> React.js, Node.js
 
 <details>
   <summary>Client</summary>
@@ -61,10 +46,10 @@ In this task, we will be working with the real live data from the SpaceX API. ou
 
 ### Key Features <a name="key-features"></a>
 
-> Description
-- **[Rockets /Dragons]**
-- **[Missions]**
-- **[My Profile]**
+> The webapp has the following key features
+- **[Rockets and Dragons page]**
+- **[Missions page]**
+- **[My Profile page]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -72,7 +57,7 @@ In this task, we will be working with the real live data from the SpaceX API. ou
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
+> 
 
 - [Live Demo Link](https://#)
 
@@ -82,61 +67,44 @@ In this task, we will be working with the real live data from the SpaceX API. ou
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> How a you could make use of this project.
+> In order to run this project you need:
 
-To get a local copy up and running, follow these steps.
-
-### Prerequisites
-
-In order to run this project you need these, incase they are not already setup, Kindly Read [Prerequisites](./Prerequisites.md).
+- Node js installed on your computer
+- Npm Node package manager
+- Terminal
 
 ### Setup
 
 Clone this repository to your desired folder:
-```sh
-  mkdir my-folder
-  cd my-folder
-  git clone git@github.com:SSEKPIUS/Microverse-React-Template--quick.git 
-```
+
+> git@github.com:SSEKPIUS/Microverse-React-Redux-group-project---Space-Travelers-Hub.git
 
 ### Install
 
 Install this project with:
+
 ```sh
-  npm install -force
+  cd my-project
+  npm install or npm i
 ```
+-
 
 ### Usage
 
 To run the project, execute the following command:
 
-Example command:
-
 ```sh
-  npm run start
+ npm run build
 ```
 
 ### Run tests
 
 To run tests, run the following command:
 
-Example command:
-
 ```sh
-  npm test
+ npm test or jest test
 ```
-
-### Deployment
-
-You can deploy this project using:
-
-<!--
-Example:
-
-```sh
-
-```
- -->
+<!-- -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -144,9 +112,9 @@ Example:
 
 ## 👥 Authors <a name="authors"></a>
 
-> collaborators of this project.
+> Collaborators in this project.
 
-👤 **Author 1**
+👤 **Authors**
 
 1. Ssekweyama Pius
 
@@ -167,7 +135,7 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> features you will add to the project.
+> Future features we will add to the project.
 
 - [ ] **[Enhance the My Profile section]**
 - [ ] **[Enhance the My Profile section by adding the "Cancel reservation" and "Leave Mission"]**
@@ -191,7 +159,6 @@ Feel free to check the [issues page](../../issues/).
 
 > We encourage you to support this project
 
-If you like this project, kindly donate a token at [Paypal]()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -201,7 +168,7 @@ If you like this project, kindly donate a token at [Paypal]()
 
 > Credit to everyone who inspired this codebase.
 
-I would like to thank microverse student team for the resorces availed.
+I would like to thank Microverse student team for the resources availed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -227,7 +194,5 @@ I would like to thank microverse student team for the resorces availed.
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

@@ -26,13 +26,18 @@ tbody tr:nth-child(odd) {
   background-color: var(--primary);
 }
 
+.MuiTableCell-root,
+.MuiTableCell-head {
+  color: rgb(30, 33, 36);
+  font-weight: 700;
+}
+
 .missionName,
 .description,
 .missionStatus {
-  font-size: 1.3rem;
-  color: rgb(30, 33, 36);
-  font-weight: 700;
   border: 1px solid var(--secondary);
+  font-size: 1.4rem;
+  font-weight: 700;
 }
 
 .statusBtnActive,
