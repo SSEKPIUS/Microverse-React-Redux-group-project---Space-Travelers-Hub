@@ -42,8 +42,8 @@ const dragonReducer = (state = initialState, action) => {
   }
 };
 
-export const getDragons = createAsyncThunk(GET_DRAGONS, async () => {
-  const data = await getData();
+export const getDragons = createAsyncThunk(GET_DRAGONS, async (dragonsData) => {
+  const data = dragonsData.length === 0 ? await getData() : dragonsData;
   const dragons = [];
 
   data.forEach((data) => {

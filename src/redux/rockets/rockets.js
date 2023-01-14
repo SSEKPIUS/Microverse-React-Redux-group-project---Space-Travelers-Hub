@@ -43,8 +43,8 @@ const rocketReducer = (state = initialState, action) => {
   }
 };
 
-export const getRockets = createAsyncThunk(GET_ROCKETS, async () => {
-  const data = await getData();
+export const getRockets = createAsyncThunk(GET_ROCKETS, async (rocketsdata = []) => {
+  const data = rocketsdata.length === 0 ? await getData() : rocketsdata;
   const rockets = [];
 
   data.forEach((data) => {

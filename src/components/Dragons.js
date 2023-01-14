@@ -7,7 +7,7 @@ const Dragons = () => {
   const { dragons } = useSelector((state) => state.dragons);
   const dispatch = useDispatch();
   useEffect(() => {
-    if (dragons.lenght === 0) dispatch(getDragons());
+    dispatch(getDragons(dragons));
   }, [dispatch]);
 
   return (
