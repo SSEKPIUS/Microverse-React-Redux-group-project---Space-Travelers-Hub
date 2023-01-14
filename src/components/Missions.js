@@ -13,7 +13,7 @@ const Missions = () => {
   const dispatch = useDispatch();
   const missions = useSelector((state) => state.missions.missions);
   useEffect(() => {
-    dispatch(getMissions());
+    if (missions.lenght === 0) dispatch(getMissions());
   }, [dispatch]);
 
   const handleJoin = (missionId) => {
