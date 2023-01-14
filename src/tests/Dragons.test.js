@@ -2,7 +2,7 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import { Provider } from 'react-redux';
 import Dragons from '../components/Dragons';
-import store from '../Redux/configureStore';
+import store from '../Redux/configureStore'; // eslint-disable-line
 
 describe('Test the react component of Profile', () => {
   it('Test react Profile page', () => {
